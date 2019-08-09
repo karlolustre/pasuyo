@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const databaseUrl = process.env.DATABASE_URL || "mongodb+srv://karlolustre:karlolustre@cluster0-6xkfx.mongodb.net/rabbit?retryWrites=true&w=majority";
 mongoose.connect(databaseUrl, {useNewUrlParser: true});
 mongoose.connection.once('open', () => {
-    console.log('Run Rabbit Run');
+    console.log('Mongodb connected');
 })
 
 app.use(bodyParser.json());
@@ -28,8 +28,6 @@ app.use((err, req, res, next) => {
 	res.status(422).send({error : err.message})
 })
 
-//import models
-mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser: true});
 
 //Middleware
 
