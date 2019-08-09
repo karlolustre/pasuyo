@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const databaseUrl = process.env.DATABASE_URL || "mongodb+srv://karlolustre:karlolustre@cluster0-6xkfx.mongodb.net/rabbit?retryWrites=true&w=majority";
 mongoose.connect(databaseUrl, {useNewUrlParser: true});
 mongoose.connection.once('open', () => {
-    console.log('Run Rabbit Run');
+    console.log('Mongodb connected');
 })
 
 app.use(bodyParser.json());
@@ -28,13 +28,15 @@ app.use((err, req, res, next) => {
 	res.status(422).send({error : err.message})
 })
 
-// to serve static assets
+
+//Middleware
+
+// to serve static assets. in the future we might add images and videos please create static locations
 app.use(express.static('views/app/build'));
 
 // express connection to react app
 app.get('*', function(req,res) {
     res.sendFile(path.join(__dirname, './views/app/public/index.html'));
-
 })
 
 app.listen(PORT, function(){

@@ -2,7 +2,17 @@
   "name": "package.json",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "passport.js",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -16,14 +26,5 @@
   "bugs": {
     "url": "https://github.com/Cants820/pasuyo/issues"
   },
-  "homepage": "https://github.com/Cants820/pasuyo#readme",
-  "dependencies": {
-    "bcrypt": "^3.0.6",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.7",
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0"
-  }
+  "homepage": "https://github.com/Cants820/pasuyo#readme"
 }
