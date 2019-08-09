@@ -18,7 +18,17 @@
   },
   "homepage": "https://github.com/Cants820/pasuyo#readme",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.17.1",
     "mongoose": "^5.6.8"
+=======
+    "bcrypt": "^3.0.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+>>>>>>> d64f48dc6e498bf3d2e751ea1829d33bd3026997
   }
 }
