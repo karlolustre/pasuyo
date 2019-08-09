@@ -4,12 +4,6 @@ const path= require('path');
 const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require('mongoose');
-<<<<<<< HEAD
-
-//import routes
-const routes = require('./routes');
-app.use('/', routes)
-=======
 const bodyParser = require('body-parser');
 
 const databaseUrl = process.env.DATABASE_URL || "mongodb+srv://karlolustre:karlolustre@cluster0-6xkfx.mongodb.net/rabbit?retryWrites=true&w=majority";
@@ -33,7 +27,6 @@ app.use('/auth', auth);
 app.use((err, req, res, next) => {
 	res.status(422).send({error : err.message})
 })
->>>>>>> d64f48dc6e498bf3d2e751ea1829d33bd3026997
 
 //import models
 mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser: true});
@@ -47,9 +40,6 @@ app.use(express.static('views/app/build'));
 app.get('*', function(req,res) {
     res.sendFile(path.join(__dirname, './views/app/public/index.html'));
 })
-
-
-
 
 app.listen(PORT, function(){
 
