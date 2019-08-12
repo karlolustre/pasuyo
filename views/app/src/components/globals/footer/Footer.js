@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const footerPaddingStyled = styled.div`
+const FooterPaddingStyled = styled.div`
   height: 200px;
   width: 100%;
   background-color: #f0f0f0;
@@ -11,31 +11,27 @@ const footerPaddingStyled = styled.div`
   padding: 60px 0px;
 `
 
-const footerStyled = styled.div`
+const FooterStyled = styled.div`
     width: 100%;
     position: relative;
     height: auto;
     background-color: #070617;
-
-    .col {
-
-    }
-
 `;
 
 
 function Footer({ children }) {
+  console.log(styled);
   return (
-      <>
-        <footerPaddingStyled>
+      <div>
+        <FooterPaddingStyled>
             Putter Padding
-        </footerPaddingStyled>
+        </FooterPaddingStyled>
 
         
-        <footerStyled>
+        <FooterStyled>
            place holder
-        </footerStyled>
-    </>
+        </FooterStyled>
+    </div>
   );
 }
 
