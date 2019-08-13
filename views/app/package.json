@@ -6,7 +6,6 @@
     "formik": "^1.5.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
     "styled-components": "^4.3.2"
   },
   "scripts": {
@@ -36,6 +35,8 @@
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9"
+    "@storybook/react": "^5.1.9",
+    "react-dev-utils": "^9.0.1",
+    "react-scripts": "^0.6.0"
   }
 }
