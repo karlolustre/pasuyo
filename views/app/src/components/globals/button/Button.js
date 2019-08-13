@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from  'styled-components'
+import styled from  'styled-components';
 
-const styledButton = styled.button`
+const StyledButton = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${props => props.primary ? "palevioletred" : "white"};
   color: ${props => props.primary ? "white" : "palevioletred"};
@@ -14,9 +14,9 @@ const styledButton = styled.button`
 `;
 
 
-function Button ({children }) {
+function Button ({ children }) {
   return (
-    <styledButton>{children}</styledButton>
+    <StyledButton>{children}</StyledButton>
   );
 }
 
